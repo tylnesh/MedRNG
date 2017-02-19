@@ -66,9 +66,6 @@ void MainWindow::on_openFileButton_clicked()
             line = in.readLine();
         }
 
-    //std::vector<QString> stdvector = myLines.toStdVector();
-
-    //std::random_shuffle ( stdvector.begin(), stdvector.end() );
 
     std::random_shuffle(myLines.begin(), myLines.end());
 
@@ -98,8 +95,6 @@ void MainWindow::on_openFileButton_clicked()
            outFile.close();
 
 
-    //if (n<stdvector.size()) for (int i=0; i<n; i++) qDebug(stdvector[i]);
-   // ui->listView->setModel(new QStringListModel(QList<QString>::fromStdVector(stdvector)));
 
 
 }
